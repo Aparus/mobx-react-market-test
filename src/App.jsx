@@ -1,12 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { useObserver } from 'mobx-react'
 import './App.css'
 import ProductList from './components/ProductList'
 import ProductPage from './components/ProductPage'
 import CartPage from './components/CartPage'
 
 function App() {
-	return useObserver(() => (
+	return (
 		<BrowserRouter>
 			<div className='App'>
 				<Switch>
@@ -16,7 +15,7 @@ function App() {
 				</Switch>
 			</div>
 		</BrowserRouter>
-	))
+	)
 }
 
 export default App

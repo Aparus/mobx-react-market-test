@@ -2,18 +2,18 @@ const dummyData = {
 	items: [
 		{
 			type: 'product',
-			code: 'konteiner-dlya-khraneniya-kolor',
-			name: 'Контейнер для хранения «Колор»',
+			code: 'Almond cake with prunes',
+			name: 'Торт Миндальный с черносливом',
 			status: 'active',
 			description: [
 				{
-					_key: '4b9b1de44692',
+					_key: '9f94093974f7',
 					_type: 'block',
 					style: 'normal',
 					children: [
 						{
-							_key: '4b9b1de446920',
-							text: 'Набор из 3шт. Объем 70 мл. Для хранения.',
+							_key: '9f94093974f70',
+							text: 'Тонкие миндальные коржи, прослоенные сливочным кремом с добавлением венгерской черной сливы.',
 							_type: 'span',
 							marks: []
 						}
@@ -24,44 +24,496 @@ const dummyData = {
 			measureUnitCode: 'pc',
 			size: 1,
 			step: 1,
-			shopCode: 'khozmag',
+			shopCode: 'valiko-bakery',
 			images: [
 				{
-					path: 'https://back.danilovskymarket.ru/files/43682657-bd3b-41b6-a31e-2f669f446d8a030.jpg',
-					code: '160076707987012',
+					path: 'https://back.danilovskymarket.ru/files/d8dbd9cc-b72f-46d8-8393-6916cc98a337%D0%BC%D0%B8%D0%BD%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%20%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D1%81%D0%BB%D0%B8%D0%B2%D0%BE%D0%BC.jpg',
+					code: '158513403089510',
 					nameOptions: {
-						alt: '030.jpg',
-						title: '030.jpg'
+						alt: 'миндальный с черносливом.jpg',
+						title: 'миндальный с черносливом.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 556,
+			weight: 140,
+			price: 320,
+			ingredients: [
+				'тесто (белок, соль, сахар, яйцо, лепестки миндаля), крем (сливки, масло сливочное, сахар, яйцо, чернослив, сахарная пудра, крахмал кукурузный) '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:27.716Z',
+			createdAt: '2020-03-25T11:00:31.390Z'
+		},
+		{
+			type: 'product',
+			code: 'Cake Domestic',
+			name: 'Торт Даместик',
+			status: 'active',
+			description: [
+				{
+					_key: '223c607ad8e2',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '223c607ad8e20',
+							text: 'Бисквит (кефир 3,2%, сода, сахар песок, яйцо, мед, мука в/с, орех грецкий, курага, изюм, масло сливочное), крем (молоко, сахар песок, крахмал кукурузный, эсенция ванильная, яичный желток, яйцо, масло сливочное), молоко сгущенное (молоко сгущенное, лепестки миндаля, сироп сахарный, сахар, вода, эсенция ванильная, коньяк)',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/2524c657-2017-4ca2-86fc-1a345965ed79%D0%B4%D0%B0%D0%BC%D0%B5%D1%81%D1%82%D0%B8%D0%BA.jpg',
+					code: '158513221562819',
+					nameOptions: {
+						alt: 'даместик.jpg',
+						title: 'даместик.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 704,
+			weight: 200,
+			price: 280,
+			ingredients: [
+				'бисквит (кефир 3,2%, сода, сахар песок, яйцо, мед, мука в/с, орех грецкий, курага, изюм, масло сливочное), крем (молоко, сахар песок, крахмал кукурузный, эсенция ванильная, яичный желток, яйцо, масло сливочное), молоко сгущенное (молоко сгущенное, лепестки миндаля, сироп сахарный, сахар, вода, эсенция ванильная, коньяк)           '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:19.509Z',
+			createdAt: '2020-03-25T10:30:16.012Z'
+		},
+		{
+			type: 'product',
+			code: 'pear-pie',
+			name: 'Грушевый пирог',
+			status: 'active',
+			description: [
+				{
+					_key: '7f35b3888ad9',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '7f35b3888ad90',
+							text: 'Маринованная в имбире груша с добавлением соленой карамели, на пышном бисквите.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/f8341704-5867-4351-99eb-50f254c372fe%D0%B3%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%8B%D0%B9%20%D0%BF%D0%B8%D1%80%D0%BE%D0%B3.jpg',
+					code: '158515382030916',
+					nameOptions: {
+						alt: 'грушевый пирог.jpg',
+						title: 'грушевый пирог.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 279,
+			weight: 160,
+			price: 250,
+			ingredients: [
+				'тесто (мука в/с, разрыхлитель, масло сливочное,имбирь, яйцо, молоко, соль, сахар), начинка (груша, имбирь в сахарной пудре, карамель, сахар песок, сахар мусковадо, соль, масло сливочное)       '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:18.784Z',
+			createdAt: '2020-03-25T16:30:20.738Z'
+		},
+		{
+			type: 'product',
+			code: 'pirozhnoe-kartoshka',
+			name: 'Пирожное "Картошка"',
+			status: 'active',
+			description: [
+				{
+					_key: '4e3bff81374b',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '4e3bff81374b0',
+							text: 'Бисквит с добавлением сгущенного молока, какао брют, французского коньяка, черного выдержанного рома и деревенского сливочного масла.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/7293b023-d46f-4c7f-a6a2-368fdc849562%D0%BF%D0%B8%D1%80%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5%20%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D1%88%D0%BA%D0%B0.jpeg',
+					code: '160432811121314',
+					nameOptions: {
+						alt: 'пирожное картошка.jpeg',
+						title: 'пирожное картошка.jpeg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 251,
+			weight: 70,
+			price: 130,
+			ingredients: [
+				'яйцо, сахар, сода, соль, мука в/с, ванилин, сгущенное молоко, масло сливочное, какао, эсенция ванильная, коньяк, вода, сливки'
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:33.398Z',
+			createdAt: '2020-03-25T08:20:37.671Z'
+		},
+		{
+			type: 'product',
+			code: 'Esterhazy Cake',
+			name: 'Торт Эстерхази',
+			status: 'active',
+			description: [
+				{
+					_key: 'b6e1c2b05d50',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: 'b6e1c2b05d500',
+							text: 'тонкие коржи с лесным орехом, пропитанные заварным кремом на основе сливок с бельгийским шоколадом и орехового пралине, покрытый ганашем из белого шоколада.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/95715e37-8763-47b0-96cf-05baa9be696e%D1%8D%D1%81%D1%82%D0%B5%D1%80%D1%85%D0%B0%D0%B7%D0%B8.jpg',
+					code: '15851514355476',
+					nameOptions: {
+						alt: 'эстерхази.jpg',
+						title: 'эстерхази.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 507,
+			weight: 125,
+			price: 310,
+			ingredients: [
+				'тесто (яйцо, сахар, мука фундучная, мука в/с, соль, лимонная кислота), крем (сливки, молоко, мука в/с, сахар, эсенция ванильная, шоколад, сливки, пралине), глазурь (шоколад, сливки), орех, сахарная пудра '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:31.796Z',
+			createdAt: '2020-03-25T15:50:35.891Z'
+		},
+		{
+			type: 'product',
+			code: 'Honey Cake',
+			name: 'Торт Медовик',
+			status: 'active',
+			description: [
+				{
+					_key: '6da6a830e9ec',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '6da6a830e9ec0',
+							text: 'тонкие медовые коржи, прослоенные лёгким кремом из сливок и сметаны, пюре манго и меда акации.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/de85463e-ea9f-4a03-8f90-7982673535fa%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D0%BA.jpg',
+					code: '15851328485902',
+					nameOptions: {
+						alt: 'медовик.jpg',
+						title: 'медовик.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 364,
+			weight: 110,
+			price: 250,
+			ingredients: [
+				'тесто (мука в/с, масло сливочное, сахар, мед, сода, яйцо), крем (сливки, сметана, мед, пюре манго) '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:28.182Z',
+			createdAt: '2020-03-25T10:40:49.023Z'
+		},
+		{
+			type: 'product',
+			code: 'Cake Cripwell',
+			name: 'Торт Крепвиль',
+			status: 'active',
+			description: [
+				{
+					_key: '86ac99597278',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '86ac995972780',
+							text: 'Тонкие коржи на сгущенном молоке, с кремом на основе сливок и сгущенного молоко, политый сверху шоколадной глазурью, украшенный свежими ягода, лепестками миндаля и безе.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/ac1850b2-9136-4bc6-8b26-d714f1c1c3a3%D0%BA%D1%80%D0%B5%D0%BF%D0%B2%D0%B8%D0%BB%D1%8C.jpg',
+					code: '15851322441516',
+					nameOptions: {
+						alt: 'крепвиль.jpg',
+						title: 'крепвиль.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 340,
+			weight: 120,
+			price: 290,
+			ingredients: [
+				'тесто (молоко сгущенное, мука в/с, яйцо, разрыхлитель), крем (сливки, сахарная пудра, сахар, эсенция ванильная), глазурь (вода, сахар, глюкоза, молоко сгущенное, желатин, шоколад в ассортименте), клубника, голубика, лепестки миндаля'
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:35.984Z',
+			createdAt: '2020-03-25T10:30:44.555Z'
+		},
+		{
+			type: 'product',
+			code: 'vafelnaya-trubochka',
+			name: 'Вафельная трубочка',
+			status: 'active',
+			description: [
+				{
+					_key: '723a5e09065c',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '723a5e09065c0',
+							text: 'Тонкое вафельное тесто, с начинкой из вареного сгущенного молока с заварным кремом и дробленным грецким орехом.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/010e0b23-fc5c-4485-bdcc-63d2c6f28209%D0%B2%D1%8B%D1%84%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%82%D1%80%D1%83%D0%B1%D0%BE%D1%87%D0%BA%D0%B0%202.jpeg',
+					code: '16043268911421',
+					nameOptions: {
+						alt: 'выфельная трубочка 2.jpeg',
+						title: 'выфельная трубочка 2.jpeg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 343,
+			weight: 100,
+			price: 205,
+			ingredients: [
+				'тесто (сахар, яйцо, соль, мука в/с, масло сливочное), крем (молоко, сливки, яйцо, сахар, мука в/с, масло сливочное, желатин, сгущенное молоко вареное, грецкий орех) '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:31.236Z',
+			createdAt: '2020-03-25T08:20:31.968Z'
+		},
+		{
+			type: 'product',
+			code: 'Cake Prague',
+			name: 'Торт Прага',
+			status: 'active',
+			description: [
+				{
+					_key: '3bc58af551e5',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '3bc58af551e50',
+							text: 'Классический советский рецепт из шоколадных коржей, с кремовой прослойкой с добавлением какао и коньяка, дополненным современным глассажем из бельгийского молочного шоколада, сливок и орехового пралине.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/b38fa619-8bfa-4929-b9cd-643d33fb7daf%D0%BF%D1%80%D0%B0%D0%B3%D0%B0.jpg',
+					code: '158515085280216',
+					nameOptions: {
+						alt: 'прага.jpg',
+						title: 'прага.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 458,
+			weight: 115,
+			price: 313,
+			ingredients: [
+				'тесто (яйцо, сахар, какао, масло сливочное, мука в/с, сода), крем (сгущенное молоко, яйцо, вода, масло сливочное, какао, коньяк, сливки, шоколад, пралине, гель нейтральный)'
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:36.490Z',
+			createdAt: '2020-03-25T15:31:25.745Z'
+		},
+		{
+			type: 'product',
+			code: 'kiev',
+			name: 'Киев',
+			status: 'active',
+			description: [
+				{
+					_key: 'c05fd58e94d7',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '9e46dee0fc0d',
+							text: 'Белково-фундучные коржи, пропитанные облегченным кремом на швейцарской меренге с фундучно-миндальным пралине. Украшается фундучным безе',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/478f3e48-eece-41cf-a9ac-f92c54291dae%D0%BA%D0%B8%D0%B5%D0%B2.jpeg',
+					code: '16043292247588',
+					nameOptions: {
+						alt: 'киев.jpeg',
+						title: 'киев.jpeg'
 					},
 					sizeOptions: null
 				}
 			],
 			calories: null,
-			weight: 0,
-			price: 350,
-			ingredients: [],
+			weight: 125,
+			price: 313,
+			ingredients: [
+				'Яйцо, сахар Демерара, соль, орех фундук, масло слив. пралине, ванилин, сахар'
+			],
 			tags: [],
 			sortIndex: 500,
 			document: null,
-			categories: ['khozyaistvennyi-magazin'],
+			categories: ['torty-i-pirozhnye'],
 			foodServices: [],
-			updatedAt: '2021-05-25T17:30:27.863Z',
-			createdAt: '2020-09-22T09:31:20.223Z'
+			updatedAt: '2021-05-25T17:30:16.914Z',
+			createdAt: '2020-11-02T15:00:25.147Z'
 		},
 		{
 			type: 'product',
-			code: 'grechishnyi-shokolad-na-ves',
-			name: 'Гречишный шоколад на вес ',
+			code: 'Napoleon Cake',
+			name: 'Торт Наполеон',
 			status: 'active',
 			description: [
 				{
-					_key: 'c208a9cb9a00',
+					_key: '47f95082c152',
 					_type: 'block',
 					style: 'normal',
 					children: [
 						{
-							_key: 'c208a9cb9a000',
-							text: 'Натуральный меланжерный шоколад с добавлением гречишного чая. Этот чай готовят из семян татарской гречихи. Срок годности 12 месяцев.',
+							_key: '47f95082c1520',
+							text: 'Классическое слоеное тесто ручной работы, с заварным кремом из сгущенного молока и свежей мадагаскарской ванили.',
 							_type: 'span',
 							marks: []
 						}
@@ -72,46 +524,46 @@ const dummyData = {
 			measureUnitCode: 'pc',
 			size: 1,
 			step: 1,
-			shopCode: 'fresh_cacao',
+			shopCode: 'valiko-bakery',
 			images: [
 				{
-					path: 'https://back.danilovskymarket.ru/files/7ebb2039-b74d-4246-b980-c7b96542876b%D0%93%D1%80%D0%B5%D1%87%D0%B8%D1%88%D0%BD%D1%8B%D0%B8%CC%86%20%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%20%D0%BD%D0%B0%20%D0%B2%D0%B5%D1%81,%20250%20%D0%B3%D1%80.jpg',
-					code: '15887748208314',
+					path: 'https://back.danilovskymarket.ru/files/11a62b0d-ee88-4591-b885-e253e5f48836%D0%BD%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD.jpg',
+					code: '15851346289307',
 					nameOptions: {
-						alt: 'Гречишный шоколад на вес, 250 гр.jpg',
-						title: 'Гречишный шоколад на вес, 250 гр.jpg'
+						alt: 'наполеон.jpg',
+						title: 'наполеон.jpg'
 					},
 					sizeOptions: null
 				}
 			],
-			calories: 594,
-			weight: 250,
-			price: 943,
+			calories: 458,
+			weight: 180,
+			price: 290,
 			ingredients: [
-				'какао-масло, сахар панела,  цельное сухое молоко, гречишный чай, морская соль, соевый лецитин.'
+				'тесто (мука в/с, сахар, тесто бельгийское), крем (молоко, сахар, молоко сгущенное, соль, крахмал кукурузный, молоко, сливки, ваниль, яичный желток, яйцо), сахарная пудра'
 			],
 			tags: [],
 			sortIndex: 500,
 			document: null,
-			categories: ['shokolad'],
+			categories: ['torty-i-pirozhnye'],
 			foodServices: [],
-			updatedAt: '2021-05-25T17:30:17.134Z',
-			createdAt: '2020-05-06T14:20:21.249Z'
+			updatedAt: '2021-05-25T17:30:28.231Z',
+			createdAt: '2020-03-25T11:10:29.327Z'
 		},
 		{
 			type: 'product',
-			code: 'varene-iz-brusniki-1150-gr',
-			name: 'Варенье из Брусники 1150 гр',
+			code: 'assorti-pastily',
+			name: 'Ассорти пастилы',
 			status: 'active',
 			description: [
 				{
-					_key: '50fbe1b198f4',
+					_key: '47c28938628d',
 					_type: 'block',
 					style: 'normal',
 					children: [
 						{
-							_key: '07652b15506a',
-							text: 'Брусничное варенье характеризуется необыкновенно насыщенным цветом и кисло-сладким вкусом с горчинкой. Лакомство, которое любят взрослые и дети.',
+							_key: '35ad7e25c030',
+							text: 'Воздушная пастила, приготовленная из натурального пюре лимона, малины и черной смородины',
 							_type: 'span',
 							marks: []
 						}
@@ -122,52 +574,51 @@ const dummyData = {
 			measureUnitCode: 'pc',
 			size: 1,
 			step: 1,
-			shopCode: 'car-berendei',
+			shopCode: 'valiko-bakery',
 			images: [
 				{
-					path: 'https://back.danilovskymarket.ru/files/78673b8b-614e-4192-b8f1-406160e4ab67%D0%92%D0%B0%D1%80%D0%B5%D0%BD%D1%8C%D0%B5%20%D0%B8%D0%B7%20%D0%91%D1%80%D1%83%D1%81%D0%BA%D0%B8%D0%BA%D0%B8%201150%20%D0%B3%D1%80.jpg',
-					code: '16130508510509',
+					path: 'https://back.danilovskymarket.ru/files/9fa05045-e4e0-4314-ac9d-0a2b5707d237%D0%B0%D1%81%D1%81%D0%BE%D1%80%D1%82%D0%B8%20%D0%BF%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D1%8B.jpeg',
+					code: '16043305145288',
 					nameOptions: {
-						alt: 'Варенье из Брускики 1150 гр.jpg',
-						title: 'Варенье из Брускики 1150 гр.jpg'
+						alt: 'ассорти пастилы.jpeg',
+						title: 'ассорти пастилы.jpeg'
 					},
 					sizeOptions: null
 				}
 			],
-			calories: 220,
-			weight: 1150,
-			price: 1520,
+			calories: 405,
+			weight: 120,
+			price: 216,
 			ingredients: [
-				'брусника, сахар-песок, вода',
-				'Пищевая ценность 100гр. продукта: углеводы 55гр.'
+				'Вода, глюкоза( сироп), сахар, яйцо, желатин,сироп Монин, краситель, масло растительное, крахмал кукурузный, сахарная пудра, лимонный концентрат'
 			],
 			tags: [
 				{
-					code: 'varene',
-					name: 'варенье'
+					code: 'deserti',
+					name: 'десерты'
 				}
 			],
 			sortIndex: 500,
 			document: null,
-			categories: ['varene', 'solenya-varene-sousy'],
+			categories: ['khleb-vypechka-deserty', 'torty-i-pirozhnye'],
 			foodServices: [],
-			updatedAt: '2021-05-25T17:30:21.926Z',
-			createdAt: '2021-02-11T13:40:51.560Z'
+			updatedAt: '2021-05-25T17:30:34.487Z',
+			createdAt: '2020-11-02T15:21:55.071Z'
 		},
 		{
 			type: 'product',
-			code: 'le-petit-marseillais-g-dusha-belyi-persik-i-nektarin',
-			name: 'Le Petit Marseillais г/душа «Белый персик и Нектарин» ',
+			code: 'rulet-pavlova',
+			name: 'Рулет Павлова',
 			status: 'active',
 			description: [
 				{
-					_key: 'c77c03bb88a2',
+					_key: 'e80f8d9a37d8',
 					_type: 'block',
 					style: 'normal',
 					children: [
 						{
-							_key: 'c77c03bb88a20',
-							text: 'Гель для душа «Средиземноморский гранат» сделает вашу кожу мягкой, увлажнённой и свежей. Гранаты яркого цвета с сочной мякотью отбираются, когда они полностью созрели и пропитались щедрым солнцем Средиземноморья. Лёгкая пена открывает фруктовый, залитый солнцем аромат.',
+							_key: 'e80f8d9a37d80',
+							text: 'Белковый бисквит, свёрнутый в рулетики с кремом из сыра Креметте, кусочками свежей клубники и томлёной груши.',
 							_type: 'span',
 							marks: []
 						}
@@ -178,51 +629,201 @@ const dummyData = {
 			measureUnitCode: 'pc',
 			size: 1,
 			step: 1,
-			shopCode: 'khozmag',
+			shopCode: 'valiko-bakery',
 			images: [
 				{
-					path: 'https://back.danilovskymarket.ru/files/f221e9e1-1ee6-41c6-8528-fde8d5632e8e4E8A7758.jpg',
-					code: '15963786484402',
+					path: 'https://back.danilovskymarket.ru/files/6685a10f-134b-4ec2-9d1c-4dfc3ac78a2e%D0%A0%D1%83%D0%BB%D0%B5%D1%82%20%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B0.jpg',
+					code: '15851316496460',
 					nameOptions: {
-						alt: '4E8A7758.jpg',
-						title: '4E8A7758.jpg'
+						alt: 'Рулет павлова.jpg',
+						title: 'Рулет павлова.jpg'
 					},
 					sizeOptions: null
 				}
 			],
-			calories: null,
-			weight: 250,
-			price: 262,
+			calories: 258,
+			weight: 100,
+			price: 220,
 			ingredients: [
-				'aqua, sodium laureth sulfate, cocamidopropyl betaine, sodium chloride, glycerin, punica granatum fruit extract, polyquaternium-7, citric acid, sodium hydroxide, sodium benzoate, potassium sorbate, parfum, limonene, geraniol, citronellol, CI 14700, CI 15985.'
+				'тесто (яйцо, сахар, уксус, крахмал кукурузный), крем ( сливки, сыр креметте, сахар, эсенция ванильная), груша в сиропе, клубника свежая, малина сублимированая'
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:37.302Z',
+			createdAt: '2020-03-25T10:20:50.139Z'
+		},
+		{
+			type: 'product',
+			code: 'Chocolate honey cake',
+			name: 'Медовик шоколадный',
+			status: 'active',
+			description: [
+				{
+					_key: '7d0f60ffcfa5',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '7d0f60ffcfa50',
+							text: 'тонкие коржи из бельгийского шоколада, с добавлением крема из сливок и сметаны, эспрессо и свежей малины.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/be7da2fd-fa23-49be-9ea3-283ce93b7929%D0%BC%D0%B5%D0%B4%D0%BE%D0%B2%D0%B8%D0%BA%20%D1%88%D0%BE%D0%BA%D0%BE%D0%BB%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9.jpg',
+					code: '158513341009615',
+					nameOptions: {
+						alt: 'медовик шоколадный.jpg',
+						title: 'медовик шоколадный.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 282,
+			weight: 140,
+			price: 270,
+			ingredients: [
+				'тесто (мука в/с, мед, масло сливочное, сахар, сода, лимон, яйцо, какао), крем (сметана, сливки, сахар, сахарная пудра, экстракт кофейный, желатин, малина), шоколадная крошка '
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:16.902Z',
+			createdAt: '2020-03-25T10:50:10.566Z'
+		},
+		{
+			type: 'product',
+			code: 'Cheesecake Cake',
+			name: 'Торт Чизкейк',
+			status: 'active',
+			description: [
+				{
+					_key: '396929c2a4cf',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '396929c2a4cf0',
+							text: 'Нежнейший сливочный крем из сыра Креметте, запеченный в тарталетке из песочного теста.',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/a73708ae-63e7-47a6-a2de-32d2c4bea81f%D1%87%D0%B8%D0%B7%D0%BA%D0%B5%D0%B9%D0%BA.jpg',
+					code: '15851514348977',
+					nameOptions: {
+						alt: 'чизкейк.jpg',
+						title: 'чизкейк.jpg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 510,
+			weight: 150,
+			price: 280,
+			ingredients: [
+				'печенье, яйцо, масло сливочное, сыр креметте, сметана, сливки, яйцо, сахар, масло сливочное, крошка вафельная'
+			],
+			tags: [],
+			sortIndex: 500,
+			document: null,
+			categories: ['torty-i-pirozhnye'],
+			foodServices: [],
+			updatedAt: '2021-05-25T17:30:30.850Z',
+			createdAt: '2020-03-25T15:50:35.217Z'
+		},
+		{
+			type: 'product',
+			code: 'oreshki-s-varenoi-sgushenkoi',
+			name: 'Орешки с вареной сгущенкой',
+			status: 'active',
+			description: [
+				{
+					_key: '43440c24fda3',
+					_type: 'block',
+					style: 'normal',
+					children: [
+						{
+							_key: '491031d5cf8f',
+							text: 'Две песочные скорлупки с начинкой из вареного сгущеного молока и заварного крема, с добавлением дробленного грецкого ореха',
+							_type: 'span',
+							marks: []
+						}
+					],
+					markDefs: []
+				}
+			],
+			measureUnitCode: 'pc',
+			size: 1,
+			step: 1,
+			shopCode: 'valiko-bakery',
+			images: [
+				{
+					path: 'https://back.danilovskymarket.ru/files/795f2bf8-5d35-4782-abd6-792147bcc238%D0%BE%D1%80%D0%B5%D1%88%D0%BA%D0%B8%20%D1%81%20%D0%B2%D0%B0%D1%80%D0%B5%D0%BD%D0%BE%D0%B8__%20%D1%81%D0%B3%D1%83%D1%89%D0%B5%D0%BD%D0%BA%D0%BE%D0%B8__.jpeg',
+					code: '16043286855703',
+					nameOptions: {
+						alt: 'орешки с варенои__ сгущенкои__.jpeg',
+						title: 'орешки с варенои__ сгущенкои__.jpeg'
+					},
+					sizeOptions: null
+				}
+			],
+			calories: 577,
+			weight: 120,
+			price: 190,
+			ingredients: [
+				'Мука в/с, яйцо, пудра сахарная, сода, соль, эссенция ванильная,"Варёнка, орех грецкий'
 			],
 			tags: [
 				{
-					code: 'dlya-tela',
-					name: 'для тела'
+					code: 'orekh',
+					name: 'орех'
 				}
 			],
 			sortIndex: 500,
 			document: null,
-			categories: ['kosmetika'],
+			categories: ['khleb-vypechka-deserty', 'torty-i-pirozhnye'],
 			foodServices: [],
-			updatedAt: '2021-05-25T17:30:28.148Z',
-			createdAt: '2020-08-02T14:30:48.801Z'
+			updatedAt: '2021-05-25T17:30:29.368Z',
+			createdAt: '2020-11-02T14:51:25.942Z'
 		},
 		{
 			type: 'product',
-			code: 'aekyung-wool-shampoo-black-and-color-zhidkoe-sredstvo-dlya-delikatnoi-stirki-chernykh-i-cvetnykh-veshei',
-			name: 'Aekyung Wool Shampoo Black&Color Жидкое средство для деликатной стирки черных и цветных вещей ',
+			code: "Bird's milk cake",
+			name: 'Торт Птичье молоко',
 			status: 'active',
 			description: [
 				{
-					_key: '8fe8cc54956a',
+					_key: '542707fb704f',
 					_type: 'block',
 					style: 'normal',
 					children: [
 						{
-							_key: '999448f83f14',
-							text: 'Aekyung Wool Shampoo Black&Color Жидкое средство для деликатной стирки черных и цветных вещей Вул ша, шт',
+							_key: '542707fb704f0',
+							text: 'Воздушное суфле со свежей мадагаскарской ванилью на подложке из песочного коржа, политое сверху глазурью из бельгийского шоколада и сливок.',
 							_type: 'span',
 							marks: []
 						}
@@ -233,271 +834,34 @@ const dummyData = {
 			measureUnitCode: 'pc',
 			size: 1,
 			step: 1,
-			shopCode: 'khozmag',
+			shopCode: 'valiko-bakery',
 			images: [
 				{
-					path: 'https://back.danilovskymarket.ru/files/2cfc87f9-079e-4e07-8b23-8e16e8b33379Aekyung%20Wool%20Shampoo%20Black&Color%20%D0%96%D0%B8%D0%B4%D0%BA%D0%BE%D0%B5%20%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE%20%D0%B4%D0%BB%D1%8F%20%D0%B4%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D0%B8%D1%80%D0%BA%D0%B8%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D1%85%20%D0%B8%20%D1%86%D0%B2%D0%B5%D1%82%D0%BD%D1%8B%D1%85%20%D0%B2%D0%B5%D1%89%D0%B5%D0%B9.jpeg',
-					code: '160986012228914',
+					path: 'https://back.danilovskymarket.ru/files/40b76cb1-636b-4a3a-9290-31d97a5b4de9%D0%BF%D1%82%D0%B8%D1%87%D1%8C%D0%B5%20%D0%BC%D0%BE%D0%BB%D0%BE%D0%BA%D0%BE.jpg',
+					code: '15851508600443',
 					nameOptions: {
-						alt: 'Aekyung Wool Shampoo Black&Color Жидкое средство для деликатной стирки черных и цветных вещей.jpeg',
-						title:
-							'Aekyung Wool Shampoo Black&Color Жидкое средство для деликатной стирки черных и цветных вещей.jpeg'
+						alt: 'птичье молоко.jpg',
+						title: 'птичье молоко.jpg'
 					},
 					sizeOptions: null
 				}
 			],
-			calories: null,
-			weight: 1000,
-			price: 702,
-			ingredients: [],
-			tags: [],
-			sortIndex: 500,
-			document: null,
-			categories: ['khozyaistvennyi-magazin', 'kosmetika'],
-			foodServices: [],
-			updatedAt: '2021-05-25T17:30:28.174Z',
-			createdAt: '2020-11-16T10:01:17.182Z'
-		},
-		{
-			type: 'product',
-			code: 'aquarius-tabletki-dlya-posudomoechnoi-mashiny-14-sht',
-			name: 'Aquarius таблетки для посудомоечной машины 14 шт',
-			status: 'active',
-			description: '',
-			measureUnitCode: 'pc',
-			size: 1,
-			step: 1,
-			shopCode: 'khozmag',
-			images: [
-				{
-					path: 'https://back.danilovskymarket.ru/files/6eff7060-d078-434d-b4b2-227f2e710e07%D0%B0%D0%BA%D0%B2%D0%B0%D1%80%D0%B8%D1%81.png',
-					code: '16056870268895',
-					nameOptions: {
-						alt: 'акварис.png',
-						title: 'акварис.png'
-					},
-					sizeOptions: null
-				}
-			],
-			calories: null,
-			weight: 0,
-			price: 222,
-			ingredients: [],
-			tags: [],
-			sortIndex: 500,
-			document: null,
-			categories: ['khozyaistvennyi-magazin', 'bytovaya-khimiya'],
-			foodServices: [],
-			updatedAt: '2021-05-25T17:30:17.918Z',
-			createdAt: '2020-11-18T08:10:27.293Z'
-		},
-		{
-			type: 'product',
-			code: 'nabor-lozhek-6-sht',
-			name: 'Набор ложек 6 шт.',
-			status: 'active',
-			description: [
-				{
-					_key: 'a6acfe6050c5',
-					_type: 'block',
-					style: 'normal',
-					children: [
-						{
-							_key: 'a6acfe6050c50',
-							text: 'Из нержавеющей стали и дерева. 6 шт.',
-							_type: 'span',
-							marks: []
-						}
-					],
-					markDefs: []
-				},
-				{
-					_key: '7318ba73aa84',
-					_type: 'block',
-					style: 'normal',
-					children: [
-						{
-							_key: '7318ba73aa840',
-							text: 'Для использования в быту, походе, пикнике.',
-							_type: 'span',
-							marks: []
-						}
-					],
-					markDefs: []
-				}
-			],
-			measureUnitCode: 'pc',
-			size: 1,
-			step: 1,
-			shopCode: 'khozmag',
-			images: [
-				{
-					path: 'https://back.danilovskymarket.ru/files/b9925b55-a368-48c5-b9ec-f22b0f067459031.jpg',
-					code: '160076711176210',
-					nameOptions: {
-						alt: '031.jpg',
-						title: '031.jpg'
-					},
-					sizeOptions: null
-				}
-			],
-			calories: null,
-			weight: 0,
-			price: 530,
-			ingredients: [],
-			tags: [],
-			sortIndex: 500,
-			document: null,
-			categories: [
-				'khozyaistvennyi-magazin',
-				'kukhonnye-instrumenty-i-aksessuary'
-			],
-			foodServices: [],
-			updatedAt: '2021-05-25T17:30:32.274Z',
-			createdAt: '2020-09-22T09:31:52.148Z'
-		},
-		{
-			type: 'product',
-			code: 'sour-cream-kolomenskaya-15-can',
-			name: 'Сметана "Коломенская" 15 % (Бидон)',
-			status: 'active',
-			description: [
-				{
-					_key: 'dd91104333b2',
-					_type: 'block',
-					style: 'normal',
-					children: [
-						{
-							_key: 'dd91104333b20',
-							text: 'Нежная, натуральная и вкусная сметана в алюминиевом бидончике не оставит равнодушным даже самого избирательного гурмана.',
-							_type: 'span',
-							marks: []
-						}
-					],
-					markDefs: []
-				}
-			],
-			measureUnitCode: 'pc',
-			size: 1,
-			step: 1,
-			shopCode: 'kolomenskoe_moloko',
-			images: [
-				{
-					path: 'https://back.danilovskymarket.ru/files/0d88bfe1-5aad-4b60-b5a5-cbc8368417d9%D0%A1%D0%BC%D0%B5%D1%82%D0%B0%D0%BD%D0%B0%2015%25%20%D1%82%D0%B5%D1%80%D0%BC%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B1%D0%B8%D0%B4%D0%BE%D0%BD.jpg',
-					code: '15974947379966',
-					nameOptions: {
-						alt: 'Сметана 15% термостатная бидон.jpg',
-						title: 'Сметана 15% термостатная бидон.jpg'
-					},
-					sizeOptions: null
-				}
-			],
-			calories: 60,
-			weight: 450,
-			price: 450,
-			ingredients: ['Пастеризованные сливки, закваска.'],
-			tags: [
-				{
-					code: 'smetana',
-					name: 'сметана'
-				}
-			],
-			sortIndex: 500,
-			document: null,
-			categories: ['smetana'],
-			foodServices: [],
-			updatedAt: '2021-05-25T17:30:40.127Z',
-			createdAt: '2020-08-15T12:32:18.434Z'
-		},
-		{
-			type: 'product',
-			code: 'perepyolka-na-grile-marinad-grecheskii',
-			name: 'Перепёлка на гриле маринад "Греческий"',
-			status: 'active',
-			description: '',
-			measureUnitCode: 'pc',
-			size: 1,
-			step: 1,
-			shopCode: 'fermery-zdes',
-			images: [
-				{
-					path: 'https://back.danilovskymarket.ru/files/6f49b47e-9278-4f58-8e14-2f3f59958779%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D0%B5%D0%BB%202.jpg',
-					code: '16194390210731567',
-					nameOptions: {
-						alt: 'Перепел 2.jpg',
-						title: 'Перепел 2.jpg'
-					},
-					sizeOptions: null
-				}
-			],
-			calories: 45,
-			weight: 50,
-			price: 500,
+			calories: 381,
+			weight: 100,
+			price: 250,
 			ingredients: [
-				'перепел,белый йогурт,чеснок,черный перец,соль',
-				'белок-13,0г,жир-14,0г'
+				'тесто (масло сливочное, сахар, мука в/с, яйцо, эсенция ванильная, вода, разрыхлитель, соль)  Крем (масло сливочное, молоко сгущенное, эсенция ванильная), суфле (агар, ваниль, сахар, вода, глюкоза, лисоная кислота, яйцо, соль), глазурь (сливки, шоколад, масло сливочное) '
 			],
 			tags: [],
 			sortIndex: 500,
 			document: null,
-			categories: ['myasnye-delikatesy'],
+			categories: ['torty-i-pirozhnye'],
 			foodServices: [],
-			updatedAt: '2021-05-25T17:30:17.115Z',
-			createdAt: '2021-04-26T12:10:21.889Z'
-		},
-		{
-			type: 'product',
-			code: 'grechishnyi-chainyi-napitok-dlya-detei-grusha-vanil',
-			name: 'ГРЕЧИШНЫЙ ЧАЙНЫЙ НАПИТОК ДЛЯ ДЕТЕЙ  «ГРУША-ВАНИЛЬ»',
-			status: 'active',
-			description: [
-				{
-					_key: '9b2de92efa62',
-					_type: 'block',
-					style: 'normal',
-					children: [
-						{
-							_key: 'cf7449d6f557',
-							text: 'Нежный и успокаивающий детский гречишный чай груша-ваниль подарит вам и вашим любимым только самые тёплые сны. В этом добром чае смешались вместе польза премиальной татарской гречихи, сладость сушеной груши и нотки ванили.',
-							_type: 'span',
-							marks: []
-						}
-					],
-					markDefs: []
-				}
-			],
-			measureUnitCode: 'pc',
-			size: 1,
-			step: 1,
-			shopCode: 'nature-s-own-factory',
-			images: [
-				{
-					path: 'https://back.danilovskymarket.ru/files/e062243f-9973-475c-92ce-007a66de607c%D0%94%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%87%D0%B0%D0%B9%20%D0%93%D1%80%D1%83%D1%88%D0%B0%20%D0%92%D0%B0%D0%BD%D0%B8%D0%BB%D1%8C.JPG',
-					code: '160553283193113',
-					nameOptions: {
-						alt: 'Детский чай Груша Ваниль.JPG',
-						title: 'Детский чай Груша Ваниль.JPG'
-					},
-					sizeOptions: null
-				}
-			],
-			calories: 290,
-			weight: 75,
-			price: 647,
-			ingredients: [
-				'Семена татарской гречихи, кусочки груши сушеные, натуральный ароматизатор груша, натуральный ароматизатор ваниль.',
-				'Пищевая ценность в 100гр продукта: белки-16.2, жиры-1.6,углеводы-52,7.'
-			],
-			tags: [],
-			sortIndex: 500,
-			document: null,
-			categories: ['chai-kofe-kakao'],
-			foodServices: [],
-			updatedAt: '2021-05-25T17:30:18.732Z',
-			createdAt: '2020-11-16T13:20:32.285Z'
+			updatedAt: '2021-05-25T17:30:39.093Z',
+			createdAt: '2020-03-25T15:41:00.389Z'
 		}
 	],
-	totalCount: 2228
+	totalCount: 17
 }
 
 export default dummyData
