@@ -1,24 +1,21 @@
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import { useObserver } from 'mobx-react'
 import './App.css'
-import { useStore } from './StoreContext'
+import ProductList from './components/ProductList'
+import ProductPage from './components/ProductPage'
+import CartPage from './components/CartPage'
 
 function App() {
-	const store = useStore()
-
 	return useObserver(() => (
-		<div className='App'>
-			<ul>
-				{store.cartProducts.map(product => {
-					const { id, title } = product
-					return (
-						<li key={`product-${id}`}>
-							<button onClick={() => store.removeCartProduct(id)}>x</button>{' '}
-							{title}
-						</li>
-					)
-				})}
-			</ul>
-		</div>
+		<BrowserRouter>
+			<div className='App'>
+				<Switch>
+					<Route exact path='/' component={ProductList} />
+					<Route exact path='/product/:productId' component={ProductPage} />
+					<Route exact path='/cart' component={CartPage} />
+				</Switch>
+			</div>
+		</BrowserRouter>
 	))
 }
 
