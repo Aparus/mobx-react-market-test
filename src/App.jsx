@@ -1,18 +1,18 @@
 import { useObserver } from 'mobx-react'
 import './App.css'
-import { useCartStore } from './CartContext'
+import { useStore } from './StoreContext'
 
 function App() {
-	const cartStore = useCartStore()
+	const store = useStore()
 
 	return useObserver(() => (
 		<div className='App'>
 			<ul>
-				{cartStore.products.map(product => {
+				{store.cartProducts.map(product => {
 					const { id, title } = product
 					return (
 						<li key={`product-${id}`}>
-							<button onClick={() => cartStore.removeProduct(id)}>x</button>{' '}
+							<button onClick={() => store.removeCartProduct(id)}>x</button>{' '}
 							{title}
 						</li>
 					)
