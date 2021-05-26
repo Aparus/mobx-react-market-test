@@ -1,6 +1,7 @@
 import React from 'react'
 import { useObserver } from 'mobx-react-lite'
 import { useStore } from '../StoreContext'
+import CartProductCountSwitcher from './CartProductCountSwitcher'
 
 const CartPage = () => {
 	const store = useStore()
@@ -19,9 +20,9 @@ const CartPage = () => {
 						path: imagePath,
 						nameOptions: { alt: imageAlt }
 					} = image
-					const count = cart[code]
+					// const count = cart[code]
 					return (
-						<div style={styles.container}>
+						<div key={code} style={styles.container}>
 							<div style={styles.imageContainer}>
 								<img style={styles.image} src={imagePath} alt={imageAlt} />
 							</div>
@@ -29,7 +30,12 @@ const CartPage = () => {
 								<div style={styles.name}>{name}</div>
 								<div style={styles.price}>{price} Р</div>
 							</div>
-							<div style={styles.countSwitcherContainer}>{count}</div>
+							<div style={styles.countSwitcherContainer}>
+								<CartProductCountSwitcher
+									productCode={code}
+									color='transparent'
+								/>
+							</div>
 						</div>
 					)
 				})}

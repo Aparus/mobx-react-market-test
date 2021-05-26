@@ -1,6 +1,7 @@
 import { useObserver } from 'mobx-react-lite'
 import React from 'react'
 import { useStore } from '../StoreContext'
+import CartProductCountSwitcher from './CartProductCountSwitcher'
 
 const ProductAddToCartButton = props => {
 	const { product } = props
@@ -10,9 +11,8 @@ const ProductAddToCartButton = props => {
 	const handlePlus = () => {
 		store.plusCartProduct(code)
 	}
-	const handleMinus = () => {
-		store.minusCartProduct(code)
-	}
+
+	const count = useObserver(() => store.getCartProductCount(code))
 
 	const priceButton = (
 		<div style={styles.productPriceContainer} onClick={handlePlus}>
@@ -24,23 +24,11 @@ const ProductAddToCartButton = props => {
 		</div>
 	)
 
-	const count = useObserver(() => store.getCartProductCount(code))
-
-	const countButton = (
-		<div style={styles.productPriceContainer}>
-			<div style={styles.countLabel}>
-				<div style={styles.minusButton} onClick={handleMinus}>
-					-
-				</div>
-				<div style={styles.count}>{count}</div>
-				<div style={styles.plusButton} onClick={handlePlus}>
-					+
-				</div>
-			</div>
-		</div>
+	const countSwitcher = (
+		<CartProductCountSwitcher productCode={code} color='green' />
 	)
 
-	return count ? countButton : priceButton
+	return count ? countSwitcher : priceButton
 }
 
 const styles = {
@@ -63,26 +51,7 @@ const styles = {
 	pricePlusSign: {
 		fontSize: 20,
 		display: 'inline-block'
-	},
-	//
-	countLabel: {
-		padding: 10,
-		backgroundColor: 'green',
-		color: 'white',
-		borderRadius: 10,
-		minWidth: 60,
-		display: 'inline-flex',
-		textAlign: 'center',
-		justifyContent: 'center',
-		fontSize: 20
-	},
-	minusButton: {
-		flex: 1
-	},
-	plusButton: {
-		flex: 1
-	},
-	count: { flex: 1 }
+	}
 }
 
 export default ProductAddToCartButton

@@ -16,7 +16,11 @@ export const createStore = () => {
 		},
 		minusCartProduct(code) {
 			const oldCount = this.cart[code] || 0
-			this.cart[code] = oldCount ? oldCount - 1 : 0
+			const newCount = oldCount ? oldCount - 1 : 0
+			this.cart[code] = newCount
+			if (newCount === 0) {
+				delete this.cart[code]
+			}
 		},
 		getCartProductCount(code) {
 			return this.cart[code]
