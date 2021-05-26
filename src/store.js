@@ -24,6 +24,14 @@ export const createStore = () => {
 		},
 		getCartProductCount(code) {
 			return this.cart[code]
+		},
+		getCartTotalPrice() {
+			return Object.entries(this.cart).reduce((prev, item) => {
+				const [code, count] = item
+				const cartProduct = this.getProductByCode(code)
+				const { price } = cartProduct
+				return prev + price * count
+			}, 0)
 		}
 	}
 }

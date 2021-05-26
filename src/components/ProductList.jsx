@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom'
 import { useObserver } from 'mobx-react'
 import { useStore } from '../StoreContext'
 import ProductInList from './ProductInList'
+import CartTotalWidget from './CartTotalWidget'
 
 const ProductList = () => {
 	const store = useStore()
@@ -26,6 +27,7 @@ const ProductList = () => {
 	return useObserver(() =>
 		store.products.length > 0 ? (
 			<div style={styles.root}>
+				<CartTotalWidget />
 				{/* <h1>Product List</h1> */}
 				{store.products.map(product => {
 					return (
@@ -37,8 +39,6 @@ const ProductList = () => {
 					)
 				})}
 				<Link to={`/cart`}>cart</Link>
-				<br />
-				<Link to={`/product/101`}>product 101</Link>
 			</div>
 		) : (
 			<div>Loading...</div>

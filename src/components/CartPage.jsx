@@ -11,6 +11,8 @@ const CartPage = () => {
 		const cartProducts = products.filter(product =>
 			cartProductCodes.includes(product.code)
 		)
+		const totalPrice = store.getCartTotalPrice()
+
 		return (
 			<div>
 				{cartProducts.map(product => {
@@ -39,6 +41,8 @@ const CartPage = () => {
 						</div>
 					)
 				})}
+
+				<div>Еды на сумму {totalPrice}</div>
 			</div>
 		)
 	})
