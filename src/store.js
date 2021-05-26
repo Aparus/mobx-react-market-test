@@ -9,17 +9,17 @@ export const createStore = () => {
 			return this.products.find(product => product.code === code)
 		},
 		// cart
-		cartProducts: {}, // {code: count}
+		cart: {}, // {code: count}
 		plusCartProduct(code) {
-			const oldCount = this.cartProducts[code] || 0
-			this.cartProducts[code] = oldCount + 1
+			const oldCount = this.cart[code] || 0
+			this.cart[code] = oldCount + 1
 		},
 		minusCartProduct(code) {
-			const oldCount = this.cartProducts[code] || 0
-			this.cartProducts[code] = oldCount ? oldCount - 1 : 0
+			const oldCount = this.cart[code] || 0
+			this.cart[code] = oldCount ? oldCount - 1 : 0
 		},
 		getCartProductCount(code) {
-			return this.cartProducts[code]
+			return this.cart[code]
 		}
 	}
 }
