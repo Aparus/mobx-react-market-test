@@ -27,13 +27,15 @@ const ProductAddToCartButton = props => {
 	const count = useObserver(() => store.getCartProductCount(code))
 
 	const countButton = (
-		<div style={styles.countButtonContainer}>
-			<div style={styles.minusButton} onClick={handleMinus}>
-				-
-			</div>
-			<div style={styles.count}>{count}</div>
-			<div style={styles.plusButton} onClick={handlePlus}>
-				+
+		<div style={styles.productPriceContainer}>
+			<div style={styles.countLabel}>
+				<div style={styles.minusButton} onClick={handleMinus}>
+					-
+				</div>
+				<div style={styles.count}>{count}</div>
+				<div style={styles.plusButton} onClick={handlePlus}>
+					+
+				</div>
 			</div>
 		</div>
 	)
@@ -52,23 +54,27 @@ const styles = {
 		padding: 10,
 		backgroundColor: 'black',
 		display: 'inline-block',
-		borderRadius: 10
+		minWidth: 60,
+		borderRadius: 10,
+		color: 'white'
 	},
 
-	priceText: { color: 'white', display: 'inline-block' },
+	priceText: { display: 'inline-block' },
 	pricePlusSign: {
 		fontSize: 20,
 		display: 'inline-block'
 	},
 	//
-	countButtonContainer: {
+	countLabel: {
 		padding: 10,
-		textAlign: 'center',
 		backgroundColor: 'green',
 		color: 'white',
 		borderRadius: 10,
+		minWidth: 60,
 		display: 'inline-flex',
-		justifyContent: 'center'
+		textAlign: 'center',
+		justifyContent: 'center',
+		fontSize: 20
 	},
 	minusButton: {
 		flex: 1
