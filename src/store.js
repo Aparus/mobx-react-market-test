@@ -5,20 +5,21 @@ export const createStore = () => {
 		updateProducts(products) {
 			this.products = products
 		},
-		// cart
-		cartProducts: [
-			{ id: 1, title: 'product1' },
-			{ id: 2, title: 'product2' },
-			{ id: 3, title: 'product3' },
-			{ id: 4, title: 'product4' },
-			{ id: 5, title: 'product5' },
-			{ id: 6, title: 'product6' }
-		],
-		addCartProduct(product) {
-			this.cartProducts.push(product)
+		getProductByCode(code) {
+			return this.products.find(product => product.code === code)
 		},
-		removeCartProduct(id) {
-			this.cartProducts = this.cartProducts.filter(product => product.id !== id)
+		// cart
+		cartProducts: {}, // {code: count}
+		plusCartProduct(code) {
+			const oldCount = this.cartProducts[code] || 0
+			this.cartProducts[code] = oldCount + 1
+		},
+		minusCartProduct(code) {
+			const oldCount = this.cartProducts[code] || 0
+			this.cartProducts[code] = oldCount ? oldCount - 1 : 0
+		},
+		getCartProductCount(code) {
+			return this.cartProducts[code]
 		}
 	}
 }
